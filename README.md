@@ -2,7 +2,7 @@
 
 Play text art animations in your PowerShell terminal! This package includes several pre-made animations like fireworks and a cozy fireplace.
 
-![Animation](img\Animation.gif)
+![Animation](./img/Animation.gif)
 
 ## Installation
 
