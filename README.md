@@ -1,40 +1,43 @@
 # firew0rks
 
-Play text art animations in your terminal! This package includes several pre-made animations like fireworks and a cozy fireplace.
+Play text art animations in your PowerShell terminal! This package includes several pre-made animations like fireworks and a cozy fireplace.
 
-![Eowzf_jWMAAk43x](https://github.com/user-attachments/assets/58d4c0ef-9f0b-49ae-80f0-4e12db3e34f0)
+![Animation](img\Animation.gif)
 
 ## Installation
 
-```bash
-npx firew0rks
+``` pwsh
+.\Do-Firew0rks.ps1
 ```
 
 ## Usage
 
-```bash
-npx firew0rks [folder] [loops]
+```pwsh
+.\Do-Firew0rks.ps1 -Animation fireworks -Loops 20
 ```
 
 Parameters (all optional):
-- `[folder]`: Folder containing text art frames (numbered 0.txt, 1.txt, etc.). Defaults to 'fireworks'
-- `[loops]`: Number of times to loop the animation (-1 for infinite). Defaults to 20
+- `[Animation]`: Folder containing text art frames (numbered 0.txt, 1.txt, etc.). Defaults to 'fireworks'
+- `[Loops]`: Number of times to loop the animation (-1 for infinite). Defaults to 20
 
 ## Examples
 
 Run with defaults (fireworks animation, 20 loops):
-```bash
-npx firew0rks
+
+```pwsh
+.\Do-Firew0rks.ps1 -Animation firew0rks
 ```
 
 Play the fireworks animation with custom loops:
-```bash
-npx firew0rks fireworks 3
+
+```pwsh
+.\Do-Firew0rks.ps1 -Animation fireworks -Loops 3
 ```
 
 Enjoy a cozy fireplace forever:
-```bash
-npx firew0rks fireplace -1
+
+```pwsh
+.\Do-Firew0rks.ps1 -Animation fireplace -Loops -1
 ```
 
 ## Local Development
@@ -42,11 +45,12 @@ npx firew0rks fireplace -1
 To run the package locally:
 
 1. Clone the repository
-2. Run directly with Node:
-```bash
-node index.js
+2. Run directly with PowerShell 5+:
+
+``` pwsh
+.\Do-Firew0rks.ps1
 # Or with custom parameters:
-node index.js fireplace 5
+.\Do-Firew0rks.ps1 -Animation fireplace -Loops 5
 ```
 
 ## Creating Your Own Animations
@@ -57,7 +61,7 @@ node index.js fireplace 5
 
 ## Acknowledgments
 
-This project is a JavaScript port of [text_art_animations](https://github.com/rvizzz/text_art_animations) by rvizzz. Thank you for the inspiration and the amazing ASCII art animations!
+This project is a PowerShell port of [firew0rks](https://github.com/addyosmani/firew0rks) by addyosmani, a JavaScript port of [text_art_animations](https://github.com/rvizzz/text_art_animations) by rvizzz. Thank you for the inspiration and the amazing ASCII art animations!
 
 ## License
 
