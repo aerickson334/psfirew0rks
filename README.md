@@ -25,7 +25,7 @@ Parameters (all optional):
 Run with defaults (fireworks animation, 20 loops):
 
 ```pwsh
-.\Do-Firew0rks.ps1 -Animation firew0rks
+.\Do-Firew0rks.ps1
 ```
 
 Play the fireworks animation with custom loops:
@@ -40,24 +40,11 @@ Enjoy a cozy fireplace forever:
 .\Do-Firew0rks.ps1 -Animation fireplace -Loops -1
 ```
 
-## Local Development
-
-To run the package locally:
-
-1. Clone the repository
-2. Run directly with PowerShell 5+:
-
-``` pwsh
-.\Do-Firew0rks.ps1
-# Or with custom parameters:
-.\Do-Firew0rks.ps1 -Animation fireplace -Loops 5
-```
-
 ## Creating Your Own Animations
 
 1. Create a new folder for your animation
 2. Add text art frames as numbered .txt files (0.txt, 1.txt, 2.txt, etc.)
-3. Run firew0rks with your folder name
+3. Run `.\Do-Firew0rks.ps1` with your folder name
 
 ## Acknowledgments
 
